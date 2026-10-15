@@ -1,0 +1,95 @@
+version: '1'
+lines:
+  red:
+    display: 123
+    icon: redstone_block
+    speed: '0.7'
+    stations: [yes, on, 7, numid, alias, central, 'off', faraway, ghost, null]
+  dotted.line:
+    display: Dotted
+    stations: [central]
+  empty: ~
+  nolist:
+    display: No List
+    stations: central
+stations:
+  yes:
+    display: Yes Station
+    world: world
+    terminal: 'true'
+    platforms:
+    - {id: 0, board: [1, 64, 1], begin: [1.5, 64.0625, 2.5], out: [1.5, 64.0625, 4.5], heading: east}
+    - {id: '0', display: Second, icon: AIR, in: [2.5, 64, 4.5], eject: [2.5, 64, 2.5], land: [3, 64, 2]}
+    - {id: 'yes', display: 42, heading: NORTH}
+    - not a map
+  on:
+    world: world
+    terminal: true
+    icon: ~
+    platforms: ~
+    board: [9, 64, 9]
+  numid:
+    display: &disp Num Id
+    world: world
+    platforms:
+    - {id: 0, board: [1, 64, 1], begin: [1.5, 64.0625, 2.5], out: [1.5, 64.0625, 4.5], heading: east}
+    - {id: '0', display: Second, icon: AIR, in: [2.5, 64, 4.5], eject: [2.5, 64, 2.5], land: [3, 64, 2]}
+    - {id: 'yes', display: 42, heading: NORTH, icon: oak_door}
+    - not a map
+    - &plat {id: '5', icon: OAK_DOOR}
+    - {<<: *plat, id: '6'}
+  alias:
+    display: *disp
+    world: world
+    platforms: [*plat]
+  7:
+    world: world
+    platforms: []
+  central:
+    display: Central
+    world: world
+    icon: stone
+    platforms:
+    - id: '1'
+      board: [10.0, 64.0, 10.0]
+  'off':
+    world: world
+    platforms: [{id: '3'}]
+  faraway:
+    display: Far
+    world: nether
+    icon: STONE
+    custom: {nested: {deep: 1}, list: [1, 2.5, x, true, ~]}
+    terminal: true
+    platforms: [{id: '0', board: [5, 64, 5], heading: EAST, extra: {a: 1}}]
+  station.with.dots:
+    world: world
+  noworld:
+    display: x
+  notamap: 5
+junctions:
+  j1: {world: world, x: 1, y: 64, z: '2', kind: SPLIT, turns: no, speed: 0.4}
+  j2: {world: world, x: 5.5, y: 64.0625, z: 5.5, kind: Cross, turns: off}
+  fork: {world: nether, x: 1.0, y: 64.0, z: 1.0, kind: split, weird: [[1, 2], {k: v}]}
+  junction.dot: {world: world, x: 0, y: 0, z: 0, kind: join}
+edges:
+  e1:
+    from-node: yes:0:out
+    to-node: junction.j1.x
+    cruise-speed: 0.6
+    auto: 'false'
+    points: [[1.5, 64.0625, 4.5], [1, 64, 9], ['2', '64', '9'], [bad, 1, 2], [1, 2]]
+    switches: [0, '2', x, 3.7, ~]
+    start-switch-speed: 0.3
+    end-switch-speed: ~
+  e2:
+    from-node: junction.j2.z
+    to-node: central:1:in
+    auto: false
+    points: not a list
+    switches: 4
+  e3: {from-node: central:1:out, to-node: junction.fork.x, points: [[0, 0, 0]], cruise-speed: 0.5}
+  e4: {from-node: faraway:0:out, to-node: central:1:in, points: [[0, 0, 0]], meta: {a: [1]}}
+  e5: {from-node: 12, to-node: central:1:in, points: [[0, 0, 0]]}
+  e.dot: {from-node: central:1:out, to-node: central:1:in, points: [[0, 0, 0]]}
+  e6: {from-node: ghost:0:out, to-node: nowhere:0:in, points: [[0, 0, 0]]}

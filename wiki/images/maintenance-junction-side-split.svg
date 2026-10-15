@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="272" viewBox="0 0 512 272">
+<style>
+.bg{fill:#fff}
+.grid{fill:none;stroke:#eceef0;stroke-width:1}
+.rail{fill:#dfe1e4}
+.trk{fill:none;stroke:#24292e;stroke-width:1.5;stroke-linejoin:miter}
+.pt{fill:#24292e}
+.jn{fill:#fff;stroke:#24292e;stroke-width:1.5}
+.arr{fill:#b0473a}
+.bad{fill:none;stroke:#24292e;stroke-width:1.8;stroke-linecap:square}
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:11px;fill:#24292e;
+paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.dim{fill:#6a737d}
+.legend{font-family:-apple-system,"Segoe UI",Helvetica,Arial,"DejaVu Sans",sans-serif;font-size:12px;fill:#57606a;
+stroke:none}
+</style>
+<defs><pattern id="grid" x="16" y="16" width="20" height="20" patternUnits="userSpaceOnUse"><path class="grid" d="M20 0H0V20"/></pattern></defs>
+<rect class="bg" width="512" height="272"/>
+<rect fill="url(#grid)" x="16" y="16" width="480" height="200"/>
+<path class="rail" d="M57 137h18v18h-18zM77 77h18v18h-18zM77 137h18v18h-18zM97 77h18v18h-18zM97 137h18v18h-18zM117 77h18v18h-18zM117 137h18v18h-18zM137 77h18v18h-18zM137 137h18v18h-18zM157 77h18v18h-18zM157 137h18v18h-18zM177 77h18v18h-18zM177 137h18v18h-18zM197 77h18v18h-18zM197 137h18v18h-18zM217 77h18v18h-18zM217 137h18v18h-18zM237 77h18v18h-18zM237 137h18v18h-18zM257 77h18v18h-18zM257 137h18v18h-18zM277 77h18v18h-18zM277 137h18v18h-18zM297 77h18v18h-18zM297 97h18v18h-18zM297 117h18v18h-18zM297 137h18v18h-18zM317 137h18v18h-18zM337 137h18v18h-18zM357 137h18v18h-18zM377 137h18v18h-18zM397 137h18v18h-18zM417 137h18v18h-18zM437 137h18v18h-18zM457 137h18v18h-18z"/>
+<path class="trk" d="M66,146 L466,146"/>
+<path class="trk" d="M306,146 L306,86 L86,86"/>
+<path class="arr" d="M141.5,146 L132.7,150.1 L132.7,141.9z"/>
+<path class="arr" d="M401.5,146 L392.7,150.1 L392.7,141.9z"/>
+<circle class="jn" cx="306" cy="146" r="4.5"/>
+<path class="bad" d="M316,96 L326,106 M316,106 L326,96"/>
+<text x="306" y="170" text-anchor="middle">split j10</text>
+<text class="dim" x="186" y="66" text-anchor="middle">side rail bends back</text>
+<path class="pt" d="M482,28 L486,38 L478,38z"/>
+<path class="trk" d="M482,38 V46"/>
+<text x="482" y="58" text-anchor="middle">N</text>
+<text class="legend" x="16" y="236">Top view, north up. The side rail of split j10 bends back against travel</text>
+<text class="legend" x="16" y="253">(a turn of about 135 degrees), so the branch is left out.</text>
+</svg>

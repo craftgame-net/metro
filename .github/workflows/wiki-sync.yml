@@ -1,0 +1,34 @@
+name: Sync wiki
+
+on:
+  push:
+    tags: ["*"]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v7
+        with:
+          path: repo
+
+      - name: Checkout wiki
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: wiki
+          token: ${{ secrets.WIKI_DEPLOY_TOKEN }}
+
+      - name: Sync files
+        run: rsync -a --delete --exclude .git --exclude CLAUDE.md repo/wiki/ wiki/
+
+      - name: Commit and push
+        working-directory: wiki
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Sync wiki from ${{ github.sha }}"
+          git push

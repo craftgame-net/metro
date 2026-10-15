@@ -1,0 +1,17 @@
+loadFailed=false
+counts lines=3 stations=6 junctions=2 edges=3 platforms=9 switchMarks=3 points=4
+L Line(id=red, display=123, icon=REDSTONE_BLOCK, stations=[true, 7, numid, alias, central, off, faraway], speed=0.7)
+L Line(id=dotted, display=dotted, icon=COMPASS, stations=[], speed=null)
+L Line(id=nolist, display=No List, icon=COMPASS, stations=[], speed=null)
+S Station(id=true, display=true, world=world, icon=COMPASS, terminal=true, platforms=[Platform(id=0, display=null, icon=OAK_SIGN, board=Point(world=world, x=9.0, y=64.0, z=9.0), begin=null, outbound=null, inbound=null, eject=null, land=null, heading=null)]) line=red
+S Station(id=numid, display=Num Id, world=world, icon=COMPASS, terminal=false, platforms=[Platform(id=1, display=null, icon=OAK_SIGN, board=Point(world=world, x=1.0, y=64.0, z=1.0), begin=Point(world=world, x=1.5, y=64.0625, z=2.5), outbound=Point(world=world, x=1.5, y=64.0625, z=4.5), inbound=null, eject=null, land=null, heading=EAST), Platform(id=0, display=Second, icon=OAK_SIGN, board=null, begin=null, outbound=null, inbound=Point(world=world, x=2.5, y=64.0, z=4.5), eject=Point(world=world, x=2.5, y=64.0, z=2.5), land=Point(world=world, x=3.0, y=64.0, z=2.0), heading=null), Platform(id=yes, display=null, icon=OAK_DOOR, board=null, begin=null, outbound=null, inbound=null, eject=null, land=null, heading=NORTH), Platform(id=5, display=null, icon=OAK_DOOR, board=null, begin=null, outbound=null, inbound=null, eject=null, land=null, heading=null), Platform(id=6, display=null, icon=OAK_DOOR, board=null, begin=null, outbound=null, inbound=null, eject=null, land=null, heading=null)]) line=red
+S Station(id=alias, display=Num Id, world=world, icon=COMPASS, terminal=false, platforms=[Platform(id=5, display=null, icon=OAK_DOOR, board=null, begin=null, outbound=null, inbound=null, eject=null, land=null, heading=null)]) line=red
+S Station(id=7, display=7, world=world, icon=COMPASS, terminal=false, platforms=[]) line=red
+S Station(id=central, display=Central, world=world, icon=STONE, terminal=false, platforms=[Platform(id=1, display=null, icon=OAK_SIGN, board=Point(world=world, x=10.0, y=64.0, z=10.0), begin=null, outbound=null, inbound=null, eject=null, land=null, heading=null)]) line=red
+S Station(id=off, display=off, world=world, icon=COMPASS, terminal=false, platforms=[Platform(id=3, display=null, icon=OAK_SIGN, board=null, begin=null, outbound=null, inbound=null, eject=null, land=null, heading=null)]) line=red
+J Junction(id=j1, world=world, location=Point(world=world, x=1.0, y=64.0, z=0.0), kind=SPLIT, turns=false, speed=0.4)
+J Junction(id=j2, world=world, location=Point(world=world, x=5.5, y=64.0625, z=5.5), kind=CROSS, turns=false, speed=null)
+E Edge(id=e1, fromNode=yes:0:out, toNode=junction.j1.x, cruiseSpeed=0.6, points=[Point(world=world, x=1.5, y=64.0625, z=4.5), Point(world=world, x=1.0, y=64.0, z=9.0), Point(world=world, x=2.0, y=64.0, z=9.0)], auto=true, switches=[0, 2, 3], startSwitchSpeed=0.3, endSwitchSpeed=null)
+E Edge(id=e2, fromNode=junction.j2.z, toNode=central:1:in, cruiseSpeed=null, points=[], auto=false, switches=null, startSwitchSpeed=null, endSwitchSpeed=null)
+E Edge(id=e5, fromNode=12, toNode=central:1:in, cruiseSpeed=null, points=[Point(world=world, x=0.0, y=0.0, z=0.0)], auto=true, switches=null, startSwitchSpeed=null, endSwitchSpeed=null)
+W Metro: world 'nether' is not loaded; keeping its 1 station(s), 1 junction(s) and 2 segment(s) unchanged in data.yml until it is (then run /metro reload)

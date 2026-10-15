@@ -1,0 +1,59 @@
+name: Bug report
+description: Report something that isn't working
+labels: [bug]
+body:
+  - type: input
+    id: metro-version
+    attributes:
+      label: Metro version
+      description: Output of `/metro version`.
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Paper and Java version
+      placeholder: Paper 26.1, Java 25
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: issues
+    attributes:
+      label: Output of /metro issues
+      description: Paste the output after a fresh `/metro rebuild`, if the network is involved.
+      render: text
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console log
+      description: >-
+        Relevant lines from the console. `/metro debug 1`, `2` or `3` adds more detail.
+        Level 3 goes to the console only.
+      render: text
+  - type: textarea
+    id: data
+    attributes:
+      label: data.yml excerpt
+      description: The part of `data.yml` for the stations, lines or junctions involved. Remove coordinates you want to keep private.
+      render: yaml

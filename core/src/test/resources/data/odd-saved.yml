@@ -1,0 +1,206 @@
+version: 1
+lines:
+  red:
+    display: '123'
+    icon: REDSTONE_BLOCK
+    stations:
+    - 'true'
+    - '7'
+    - numid
+    - alias
+    - central
+    - 'off'
+    - faraway
+    speed: 0.7
+  dotted:
+    display: dotted
+    icon: COMPASS
+    stations: []
+  nolist:
+    display: No List
+    icon: COMPASS
+    stations: []
+stations:
+  'true':
+    display: 'true'
+    world: world
+    icon: COMPASS
+    terminal: true
+    platforms:
+    - id: '0'
+      icon: OAK_SIGN
+      board:
+      - 9.0
+      - 64.0
+      - 9.0
+  numid:
+    display: Num Id
+    world: world
+    icon: COMPASS
+    platforms:
+    - id: '1'
+      icon: OAK_SIGN
+      board:
+      - 1.0
+      - 64.0
+      - 1.0
+      begin:
+      - 1.5
+      - 64.0625
+      - 2.5
+      out:
+      - 1.5
+      - 64.0625
+      - 4.5
+      heading: EAST
+    - id: '0'
+      display: Second
+      icon: OAK_SIGN
+      in:
+      - 2.5
+      - 64.0
+      - 4.5
+      eject:
+      - 2.5
+      - 64.0
+      - 2.5
+      land:
+      - 3.0
+      - 64.0
+      - 2.0
+    - id: 'yes'
+      icon: OAK_DOOR
+      heading: NORTH
+    - id: '5'
+      icon: OAK_DOOR
+    - id: '6'
+      icon: OAK_DOOR
+  alias:
+    display: Num Id
+    world: world
+    icon: COMPASS
+    platforms:
+    - id: '5'
+      icon: OAK_DOOR
+  '7':
+    display: '7'
+    world: world
+    icon: COMPASS
+    platforms: []
+  central:
+    display: Central
+    world: world
+    icon: STONE
+    platforms:
+    - id: '1'
+      icon: OAK_SIGN
+      board:
+      - 10.0
+      - 64.0
+      - 10.0
+  'off':
+    display: 'off'
+    world: world
+    icon: COMPASS
+    platforms:
+    - id: '3'
+      icon: OAK_SIGN
+  faraway:
+    display: Far
+    world: nether
+    icon: STONE
+    custom:
+      nested:
+        deep: 1
+      list:
+      - 1
+      - 2.5
+      - x
+      - true
+      - null
+    terminal: true
+    platforms:
+    - id: '0'
+      board:
+      - 5
+      - 64
+      - 5
+      heading: EAST
+      extra:
+        a: 1
+junctions:
+  j1:
+    world: world
+    x: 1.0
+    y: 64.0
+    z: 0.0
+    kind: split
+    turns: false
+    speed: 0.4
+  j2:
+    world: world
+    x: 5.5
+    y: 64.0625
+    z: 5.5
+    kind: cross
+    turns: false
+  fork:
+    world: nether
+    x: 1.0
+    y: 64.0
+    z: 1.0
+    kind: split
+    weird:
+    - - 1
+      - 2
+    - k: v
+edges:
+  e1:
+    from-node: yes:0:out
+    to-node: junction.j1.x
+    cruise-speed: 0.6
+    points:
+    - - 1.5
+      - 64.0625
+      - 4.5
+    - - 1.0
+      - 64.0
+      - 9.0
+    - - 2.0
+      - 64.0
+      - 9.0
+    switches:
+    - 0
+    - 2
+    - 3
+    start-switch-speed: 0.3
+  e2:
+    from-node: junction.j2.z
+    to-node: central:1:in
+    auto: false
+    points: []
+  e5:
+    from-node: '12'
+    to-node: central:1:in
+    points:
+    - - 0.0
+      - 0.0
+      - 0.0
+  e3:
+    from-node: central:1:out
+    to-node: junction.fork.x
+    points:
+    - - 0
+      - 0
+      - 0
+    cruise-speed: 0.5
+  e4:
+    from-node: faraway:0:out
+    to-node: central:1:in
+    points:
+    - - 0
+      - 0
+      - 0
+    meta:
+      a:
+      - 1

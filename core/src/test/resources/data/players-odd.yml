@@ -1,0 +1,10 @@
+pending-rescue:
+  11111111-2222-3333-4444-555555555555: central
+  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee:
+    station: yes
+    platform: 0
+  aaaaaaaa-bbbb-cccc-dddd-ffffffffffff:
+    station: '7'
+  not-a-uuid:
+    station: a
+  bbbbbbbb-bbbb-cccc-dddd-eeeeeeeeeeee: ~

@@ -1,0 +1,34 @@
+name: Metro
+version: '${version}'
+main: net.craftgame.metro.MetroPlugin
+description: Server-side metro on physical rails
+author: Egor Taranov
+website: https://github.com/craftgame-net/metro
+api-version: '26.1'
+# Load after world managers, so their worlds exist when data.yml is read.
+softdepend: [Multiverse-Core]
+
+libraries:
+    - org.jetbrains.kotlin:kotlin-stdlib:2.4.20
+
+permissions:
+    metro.ride:
+        description: Board the metro
+        default: true
+    metro.build:
+        description: Edit the network (editor, crowbar, editing commands), rebuild it and see its issues
+        default: op
+    metro.reload:
+        description: Reload the config and data
+        default: op
+    metro.debug:
+        description: Watch debug logging
+        default: op
+    metro.admin:
+        description: Everything Metro offers
+        default: op
+        children:
+            metro.ride: true
+            metro.build: true
+            metro.reload: true
+            metro.debug: true

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="272" viewBox="0 0 492 272">
+<style>
+.bg{fill:#fff}
+.grid{fill:none;stroke:#eceef0;stroke-width:1}
+.rail{fill:#dfe1e4}
+.trk{fill:none;stroke:#24292e;stroke-width:1.5;stroke-linejoin:miter}
+.pt{fill:#24292e}
+.arr{fill:#b0473a}
+.bad{fill:none;stroke:#24292e;stroke-width:1.8;stroke-linecap:square}
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:11px;fill:#24292e;
+paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.dim{fill:#6a737d}
+.legend{font-family:-apple-system,"Segoe UI",Helvetica,Arial,"DejaVu Sans",sans-serif;font-size:12px;fill:#57606a;
+stroke:none}
+</style>
+<defs><pattern id="grid" x="16" y="16" width="20" height="20" patternUnits="userSpaceOnUse"><path class="grid" d="M20 0H0V20"/></pattern></defs>
+<rect class="bg" width="492" height="272"/>
+<rect fill="url(#grid)" x="16" y="16" width="460" height="200"/>
+<path class="rail" d="M37 77h18v18h-18zM37 157h18v18h-18zM57 77h18v18h-18zM57 157h18v18h-18zM77 77h18v18h-18zM77 157h18v18h-18zM97 77h18v18h-18zM97 157h18v18h-18zM117 77h18v18h-18zM117 157h18v18h-18zM137 77h18v18h-18zM137 157h18v18h-18zM157 77h18v18h-18zM157 157h18v18h-18zM177 77h18v18h-18zM177 157h18v18h-18zM197 77h18v18h-18zM197 157h18v18h-18zM217 77h18v18h-18zM217 157h18v18h-18zM237 77h18v18h-18zM237 157h18v18h-18zM257 77h18v18h-18zM257 157h18v18h-18zM277 77h18v18h-18zM277 157h18v18h-18zM297 77h18v18h-18zM297 157h18v18h-18zM317 77h18v18h-18zM317 157h18v18h-18zM337 77h18v18h-18zM337 157h18v18h-18zM357 77h18v18h-18zM357 157h18v18h-18z"/>
+<path class="trk" d="M46,86 L366,86"/>
+<path class="trk" d="M366,166 L46,166"/>
+<path class="arr" d="M101.5,86 L92.7,90.1 L92.7,81.9z"/>
+<path class="arr" d="M321.5,86 L312.7,90.1 L312.7,81.9z"/>
+<path class="arr" d="M310.5,166 L319.3,161.9 L319.3,170.1z"/>
+<path class="arr" d="M90.5,166 L99.3,161.9 L99.3,170.1z"/>
+<circle class="pt" cx="126" cy="86" r="3.5"/>
+<circle class="pt" cx="246" cy="86" r="3.5"/>
+<circle class="pt" cx="206" cy="86" r="3.5"/>
+<circle class="pt" cx="166" cy="86" r="3.5"/>
+<circle class="pt" cx="246" cy="166" r="3.5"/>
+<circle class="pt" cx="126" cy="166" r="3.5"/>
+<circle class="pt" cx="166" cy="166" r="3.5"/>
+<circle class="pt" cx="206" cy="166" r="3.5"/>
+<path class="bad" d="M385,81 L395,91 M385,91 L395,81"/>
+<path class="bad" d="M385,161 L395,171 M385,171 L395,161"/>
+<text class="dim" x="186" y="50" text-anchor="middle">docks (terminal)</text>
+<text class="dim" x="390" y="130" text-anchor="middle">no loop</text>
+<path class="pt" d="M462,28 L466,38 L458,38z"/>
+<path class="trk" d="M462,38 V46"/>
+<text x="462" y="58" text-anchor="middle">N</text>
+<text class="legend" x="16" y="236">Top view, north up. Both tracks end behind the terminal,</text>
+<text class="legend" x="16" y="253">so no cart can turn there.</text>
+</svg>

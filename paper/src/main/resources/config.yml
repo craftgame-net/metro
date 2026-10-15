@@ -1,0 +1,43 @@
+# Metro configuration.
+# Texts live in lang.yml; this file tunes behaviour.
+
+docs-url: "https://github.com/craftgame-net/metro/wiki"   # wiki the [?] links in rebuild warnings open
+
+speed:                    # real blocks per tick (vanilla passenger slowdown is compensated)
+  max: 1.2                # hard cap for any speed: lines, junctions, everything below (up to 1.5, the vanilla limit)
+  max-cruise: 1.0         # cap for line speeds (/metro line speed)
+  cruise: 0.6             # main line when a line has no speed of its own
+  station: 0.3            # platform on the main line / pocket
+  through: 0.55           # passing a station without stopping
+  branch: 0.3             # at a junction's switch: the start of a branch, the end of a ramp
+  turn: 0.35              # sharp turns (90 degrees or more)
+  # Segment speeds are baked when the graph is built: run /metro rebuild after changing them.
+
+motion:
+  acceleration: 0.02      # blocks/tick^2, above 0 and at most speed.max
+  deceleration: 0.03      # blocks/tick^2, above 0 and at most speed.max
+  slow-lead: 6            # blocks before a slower stretch where the cart already runs at its speed (0-16)
+  slow-trail: 2           # blocks after it before speeding up again (0-16)
+  slope-speed: 0.6        # blocks/tick on slopes, at least 0.05 and at most speed.max; speed.max turns it off
+  slope-lead: 2           # blocks before a slope where the cart already runs at the slope speed (0-16);
+                          # counted from the middle of the first slope rail, so use 1 or more
+  slope-trail: 2          # blocks after a slope before speeding up again (0-16), from the middle of the next rail
+
+timing:                   # ticks, 20 = 1s
+  departure: 0            # pause before leaving begin
+  eject-delay: 20         # wait at eject before setting the rider down
+
+gui:
+  destination-material: COMPASS   # default station icon
+
+authoring:
+  crowbar-material: TRIDENT       # editor tool material
+
+rebuild:
+  max-search: 5000                # rail blocks one path search may visit before giving up
+
+preview:
+  enabled: true
+  route-color: "#FFFFFF"
+  interval: 10                    # ticks between preview frames (at least 2)
+  radius: 48                      # draw only within this many blocks of each editor

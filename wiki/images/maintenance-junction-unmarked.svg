@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="572" height="532" viewBox="0 0 572 532">
+<style>
+.bg{fill:#fff}
+.grid{fill:none;stroke:#eceef0;stroke-width:1}
+.rail{fill:#dfe1e4}
+.trk{fill:none;stroke:#24292e;stroke-width:1.5;stroke-linejoin:miter}
+.pt{fill:#24292e}
+.arr{fill:#b0473a}
+.bad{fill:none;stroke:#24292e;stroke-width:1.8;stroke-linecap:square}
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:11px;fill:#24292e;
+paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.dim{fill:#6a737d}
+.legend{font-family:-apple-system,"Segoe UI",Helvetica,Arial,"DejaVu Sans",sans-serif;font-size:12px;fill:#57606a;
+stroke:none}
+</style>
+<defs><pattern id="grid" x="16" y="16" width="20" height="20" patternUnits="userSpaceOnUse"><path class="grid" d="M20 0H0V20"/></pattern></defs>
+<rect class="bg" width="572" height="532"/>
+<rect fill="url(#grid)" x="16" y="16" width="540" height="460"/>
+<path class="rail" d="M37 117h18v18h-18zM37 257h18v18h-18zM37 277h18v18h-18zM37 377h18v18h-18zM37 417h18v18h-18zM57 117h18v18h-18zM57 257h18v18h-18zM57 277h18v18h-18zM57 377h18v18h-18zM57 417h18v18h-18zM77 117h18v18h-18zM77 257h18v18h-18zM77 277h18v18h-18zM77 377h18v18h-18zM77 417h18v18h-18zM97 117h18v18h-18zM97 257h18v18h-18zM97 277h18v18h-18zM97 377h18v18h-18zM97 417h18v18h-18zM117 117h18v18h-18zM117 257h18v18h-18zM117 277h18v18h-18zM117 377h18v18h-18zM117 417h18v18h-18zM137 117h18v18h-18zM137 257h18v18h-18zM137 277h18v18h-18zM137 377h18v18h-18zM137 417h18v18h-18zM157 117h18v18h-18zM157 257h18v18h-18zM157 277h18v18h-18zM157 377h18v18h-18zM157 417h18v18h-18zM177 117h18v18h-18zM177 257h18v18h-18zM177 277h18v18h-18zM177 377h18v18h-18zM177 417h18v18h-18zM197 117h18v18h-18zM197 257h18v18h-18zM197 277h18v18h-18zM197 377h18v18h-18zM197 417h18v18h-18zM217 117h18v18h-18zM217 257h18v18h-18zM217 277h18v18h-18zM217 377h18v18h-18zM217 417h18v18h-18zM237 57h18v18h-18zM237 77h18v18h-18zM237 97h18v18h-18zM237 117h18v18h-18zM237 257h18v18h-18zM237 277h18v18h-18zM237 377h18v18h-18zM237 417h18v18h-18zM257 57h18v18h-18zM257 117h18v18h-18zM257 257h18v18h-18zM257 277h18v18h-18zM257 377h18v18h-18zM257 417h18v18h-18zM277 57h18v18h-18zM277 117h18v18h-18zM277 257h18v18h-18zM277 277h18v18h-18zM277 377h18v18h-18zM277 417h18v18h-18zM297 57h18v18h-18zM297 117h18v18h-18zM297 257h18v18h-18zM297 277h18v18h-18zM297 377h18v18h-18zM297 417h18v18h-18zM317 57h18v18h-18zM317 117h18v18h-18zM317 257h18v18h-18zM317 277h18v18h-18zM317 377h18v18h-18zM317 417h18v18h-18zM337 57h18v18h-18zM337 117h18v18h-18zM337 257h18v18h-18zM337 277h18v18h-18zM337 377h18v18h-18zM337 417h18v18h-18zM357 57h18v18h-18zM357 117h18v18h-18zM357 257h18v18h-18zM357 277h18v18h-18zM357 377h18v18h-18zM357 417h18v18h-18zM377 57h18v18h-18zM377 117h18v18h-18zM377 257h18v18h-18zM377 277h18v18h-18zM377 377h18v18h-18zM377 417h18v18h-18zM397 57h18v18h-18zM397 117h18v18h-18zM397 257h18v18h-18zM397 277h18v18h-18zM397 377h18v18h-18zM397 417h18v18h-18zM417 57h18v18h-18zM417 117h18v18h-18zM417 257h18v18h-18zM417 277h18v18h-18zM417 377h18v18h-18zM417 417h18v18h-18zM437 117h18v18h-18zM437 257h18v18h-18zM437 277h18v18h-18zM437 377h18v18h-18zM437 417h18v18h-18zM457 117h18v18h-18zM457 257h18v18h-18zM457 277h18v18h-18zM457 377h18v18h-18zM457 417h18v18h-18zM477 117h18v18h-18zM477 257h18v18h-18zM477 277h18v18h-18zM477 377h18v18h-18zM477 417h18v18h-18zM497 117h18v18h-18zM497 257h18v18h-18zM497 277h18v18h-18zM497 377h18v18h-18zM497 417h18v18h-18zM517 117h18v18h-18zM517 257h18v18h-18zM517 277h18v18h-18zM517 377h18v18h-18zM517 417h18v18h-18z"/>
+<path class="trk" d="M46,126 L526,126"/>
+<path class="trk" d="M246,126 L246,66 L426,66"/>
+<path class="trk" d="M46,266 L526,266"/>
+<path class="trk" d="M526,286 L46,286"/>
+<path class="trk" d="M46,386 L526,386"/>
+<path class="trk" d="M526,426 L46,426"/>
+<path class="arr" d="M121.5,126 L112.7,130.1 L112.7,121.9z"/>
+<path class="arr" d="M461.5,126 L452.7,130.1 L452.7,121.9z"/>
+<path class="arr" d="M301.5,66 L292.7,70.1 L292.7,61.9z"/>
+<path class="arr" d="M121.5,266 L112.7,270.1 L112.7,261.9z"/>
+<path class="arr" d="M461.5,266 L452.7,270.1 L452.7,261.9z"/>
+<path class="arr" d="M450.5,286 L459.3,281.9 L459.3,290.1z"/>
+<path class="arr" d="M110.5,286 L119.3,281.9 L119.3,290.1z"/>
+<path class="arr" d="M121.5,386 L112.7,390.1 L112.7,381.9z"/>
+<path class="arr" d="M461.5,386 L452.7,390.1 L452.7,381.9z"/>
+<path class="arr" d="M450.5,426 L459.3,421.9 L459.3,430.1z"/>
+<path class="arr" d="M110.5,426 L119.3,421.9 L119.3,430.1z"/>
+<path class="bad" d="M256,136 L266,146 M256,146 L266,136"/>
+<path class="bad" d="M281,271 L291,281 M281,281 L291,271"/>
+<text x="46" y="46">wrong</text>
+<text class="dim" x="286" y="166">switch without a junction</text>
+<text x="46" y="226">wrong</text>
+<text class="dim" x="286" y="242" text-anchor="middle">tracks touch</text>
+<text x="46" y="346">right</text>
+<text class="dim" x="286" y="346" text-anchor="middle">one free block between</text>
+<path class="pt" d="M542,28 L546,38 L538,38z"/>
+<path class="trk" d="M542,38 V46"/>
+<text x="542" y="58" text-anchor="middle">N</text>
+<text class="legend" x="16" y="496">Top view, north up. Rails next to each other always connect, whatever their shape,</text>
+<text class="legend" x="16" y="513">so a side rail or a track right beside another makes a switch.</text>
+</svg>

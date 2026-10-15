@@ -1,0 +1,10 @@
+complexity:
+  TooManyFunctions:
+    allowedFunctionsPerClass: 20
+    allowedFunctionsPerObject: 20
+    ignorePrivate: true
+    ignoreOverridden: true
+  LongParameterList:
+    allowedFunctionParameters: 7
+    allowedConstructorParameters: 8
+    ignoreDefaultParameters: true

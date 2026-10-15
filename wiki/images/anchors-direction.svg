@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="572" height="412" viewBox="0 0 572 412">
+<style>
+.bg{fill:#fff}
+.grid{fill:none;stroke:#eceef0;stroke-width:1}
+.rail{fill:#dfe1e4}
+.trk{fill:none;stroke:#24292e;stroke-width:1.5;stroke-linejoin:miter}
+.pocket{stroke-dasharray:4 3}
+.pt{fill:#24292e}
+.arr{fill:#b0473a}
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:11px;fill:#24292e;
+paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.dim{fill:#6a737d}
+.legend{font-family:-apple-system,"Segoe UI",Helvetica,Arial,"DejaVu Sans",sans-serif;font-size:12px;fill:#57606a;
+stroke:none}
+</style>
+<defs><pattern id="grid" x="16" y="16" width="20" height="20" patternUnits="userSpaceOnUse"><path class="grid" d="M20 0H0V20"/></pattern></defs>
+<rect class="bg" width="572" height="412"/>
+<rect fill="url(#grid)" x="16" y="16" width="540" height="340"/>
+<path class="rail" d="M37 97h18v18h-18zM37 257h18v18h-18zM57 97h18v18h-18zM57 257h18v18h-18zM77 97h18v18h-18zM77 257h18v18h-18zM97 97h18v18h-18zM97 257h18v18h-18zM117 97h18v18h-18zM117 257h18v18h-18zM137 97h18v18h-18zM137 257h18v18h-18zM157 97h18v18h-18zM157 217h18v18h-18zM157 257h18v18h-18zM177 97h18v18h-18zM177 217h18v18h-18zM177 257h18v18h-18zM197 97h18v18h-18zM197 217h18v18h-18zM197 257h18v18h-18zM217 97h18v18h-18zM217 217h18v18h-18zM217 257h18v18h-18zM237 97h18v18h-18zM237 217h18v18h-18zM237 257h18v18h-18zM257 97h18v18h-18zM257 217h18v18h-18zM257 257h18v18h-18zM277 97h18v18h-18zM277 217h18v18h-18zM277 257h18v18h-18zM297 97h18v18h-18zM297 217h18v18h-18zM297 257h18v18h-18zM317 97h18v18h-18zM317 217h18v18h-18zM317 237h18v18h-18zM317 257h18v18h-18zM337 97h18v18h-18zM337 257h18v18h-18zM357 97h18v18h-18zM357 257h18v18h-18zM377 97h18v18h-18zM377 257h18v18h-18zM397 97h18v18h-18zM397 257h18v18h-18zM417 97h18v18h-18zM417 257h18v18h-18zM437 97h18v18h-18zM437 257h18v18h-18zM457 97h18v18h-18zM457 257h18v18h-18zM477 97h18v18h-18zM477 257h18v18h-18zM497 97h18v18h-18zM497 257h18v18h-18zM517 97h18v18h-18zM517 257h18v18h-18z"/>
+<path class="trk" d="M46,106 L526,106"/>
+<path class="trk" d="M46,266 L526,266"/>
+<path class="trk pocket" d="M166,226 L326,226 L326,266"/>
+<path class="arr" d="M121.5,106 L112.7,110.1 L112.7,101.9z"/>
+<path class="arr" d="M261.5,106 L252.7,110.1 L252.7,101.9z"/>
+<path class="arr" d="M401.5,106 L392.7,110.1 L392.7,101.9z"/>
+<path class="arr" d="M481.5,106 L472.7,110.1 L472.7,101.9z"/>
+<path class="arr" d="M281.5,226 L272.7,230.1 L272.7,221.9z"/>
+<circle class="pt" cx="166" cy="106" r="3.5"/>
+<circle class="pt" cx="326" cy="106" r="3.5"/>
+<circle class="pt" cx="166" cy="226" r="3.5"/>
+<circle class="pt" cx="326" cy="266" r="3.5"/>
+<text x="166" y="130" text-anchor="middle">begin garden:0</text>
+<text x="326" y="130" text-anchor="middle">out garden:0</text>
+<text x="166" y="210" text-anchor="middle">begin square:0</text>
+<text x="326" y="290" text-anchor="middle">out square:0</text>
+<text class="dim" x="326" y="70" text-anchor="middle">one way on: read from the rails</text>
+<text class="dim" x="326" y="310" text-anchor="middle">two ways on: set a direction</text>
+<path class="pt" d="M542,28 L546,38 L538,38z"/>
+<path class="trk" d="M542,38 V46"/>
+<text x="542" y="58" text-anchor="middle">N</text>
+<text class="legend" x="16" y="376">Top view, north up. Top: out has one rail ahead, so the direction is read.</text>
+<text class="legend" x="16" y="393">Bottom: out is on the pocket's switch, so the platform needs a direction.</text>
+</svg>

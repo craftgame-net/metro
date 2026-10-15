@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="452" height="492" viewBox="0 0 452 492">
+<style>
+.bg{fill:#fff}
+.grid{fill:none;stroke:#eceef0;stroke-width:1}
+.rail{fill:#dfe1e4}
+.trk{fill:none;stroke:#24292e;stroke-width:1.5;stroke-linejoin:miter}
+.pt{fill:#24292e}
+.jn{fill:#fff;stroke:#24292e;stroke-width:1.5}
+.arr{fill:#b0473a}
+.turn{fill:none;stroke:#b0473a;stroke-width:1.2;stroke-dasharray:3 2}
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:11px;fill:#24292e;
+paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.dim{fill:#6a737d}
+.legend{font-family:-apple-system,"Segoe UI",Helvetica,Arial,"DejaVu Sans",sans-serif;font-size:12px;fill:#57606a;
+stroke:none}
+</style>
+<defs><pattern id="grid" x="16" y="16" width="20" height="20" patternUnits="userSpaceOnUse"><path class="grid" d="M20 0H0V20"/></pattern></defs>
+<rect class="bg" width="452" height="492"/>
+<rect fill="url(#grid)" x="16" y="16" width="420" height="420"/>
+<path class="rail" d="M17 217h18v18h-18zM37 217h18v18h-18zM57 217h18v18h-18zM77 217h18v18h-18zM97 217h18v18h-18zM117 217h18v18h-18zM137 217h18v18h-18zM157 217h18v18h-18zM177 217h18v18h-18zM197 217h18v18h-18zM217 17h18v18h-18zM217 37h18v18h-18zM217 57h18v18h-18zM217 77h18v18h-18zM217 97h18v18h-18zM217 117h18v18h-18zM217 137h18v18h-18zM217 157h18v18h-18zM217 177h18v18h-18zM217 197h18v18h-18zM217 217h18v18h-18zM217 237h18v18h-18zM217 257h18v18h-18zM217 277h18v18h-18zM217 297h18v18h-18zM217 317h18v18h-18zM217 337h18v18h-18zM217 357h18v18h-18zM217 377h18v18h-18zM217 397h18v18h-18zM217 417h18v18h-18zM237 217h18v18h-18zM257 217h18v18h-18zM277 217h18v18h-18zM297 217h18v18h-18zM317 217h18v18h-18zM337 217h18v18h-18zM357 217h18v18h-18zM377 217h18v18h-18zM397 217h18v18h-18zM417 217h18v18h-18z"/>
+<path class="trk" d="M26,226 L426,226"/>
+<path class="trk" d="M226,426 L226,26"/>
+<path class="arr" d="M121.5,226 L112.7,230.1 L112.7,221.9z"/>
+<path class="arr" d="M341.5,226 L332.7,230.1 L332.7,221.9z"/>
+<path class="arr" d="M226,330.5 L230.1,339.3 L221.9,339.3z"/>
+<path class="arr" d="M226,110.5 L230.1,119.3 L221.9,119.3z"/>
+<path class="turn" d="M170,218 Q218,218 218,170"/>
+<path class="arr" d="M218,165.5 L221.4,172.7 L214.6,172.7z"/>
+<path class="turn" d="M234,282 Q234,234 282,234"/>
+<path class="arr" d="M286.5,234 L279.3,237.4 L279.3,230.6z"/>
+<circle class="jn" cx="226" cy="226" r="4.5"/>
+<text x="241" y="212">cross j3</text>
+<text class="dim" x="18" y="210">red</text>
+<text class="dim" x="241" y="430">blue</text>
+<path class="pt" d="M422,28 L426,38 L418,38z"/>
+<path class="trk" d="M422,38 V46"/>
+<text x="422" y="58" text-anchor="middle">N</text>
+<text class="legend" x="16" y="456">Top view, north up. Both tracks are at one height.</text>
+<text class="legend" x="16" y="473">Dashed curves are the turns a cart may take.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="652" height="292" viewBox="0 0 652 292">
+<style>
+.bg{fill:#fff}
+.grid{fill:none;stroke:#eceef0;stroke-width:1}
+.rail{fill:#dfe1e4}
+.trk{fill:none;stroke:#24292e;stroke-width:1.5;stroke-linejoin:miter}
+.pt{fill:#24292e}
+.jn{fill:#fff;stroke:#24292e;stroke-width:1.5}
+.arr{fill:#b0473a}
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:11px;fill:#24292e;
+paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.legend{font-family:-apple-system,"Segoe UI",Helvetica,Arial,"DejaVu Sans",sans-serif;font-size:12px;fill:#57606a;
+stroke:none}
+</style>
+<defs><pattern id="grid" x="16" y="16" width="20" height="20" patternUnits="userSpaceOnUse"><path class="grid" d="M20 0H0V20"/></pattern></defs>
+<rect class="bg" width="652" height="292"/>
+<rect fill="url(#grid)" x="16" y="16" width="620" height="220"/>
+<path class="rail" d="M37 137h18v18h-18zM57 137h18v18h-18zM77 137h18v18h-18zM97 137h18v18h-18zM117 137h18v18h-18zM137 137h18v18h-18zM157 77h18v18h-18zM157 97h18v18h-18zM157 117h18v18h-18zM157 137h18v18h-18zM177 77h18v18h-18zM177 137h18v18h-18zM197 77h18v18h-18zM197 137h18v18h-18zM217 77h18v18h-18zM217 137h18v18h-18zM237 77h18v18h-18zM237 137h18v18h-18zM257 77h18v18h-18zM257 137h18v18h-18zM277 77h18v18h-18zM277 137h18v18h-18zM297 77h18v18h-18zM297 137h18v18h-18zM317 77h18v18h-18zM317 137h18v18h-18zM337 77h18v18h-18zM337 137h18v18h-18zM357 77h18v18h-18zM357 137h18v18h-18zM377 77h18v18h-18zM377 137h18v18h-18zM397 77h18v18h-18zM397 137h18v18h-18zM417 77h18v18h-18zM417 137h18v18h-18zM437 77h18v18h-18zM437 137h18v18h-18zM457 77h18v18h-18zM457 137h18v18h-18zM477 77h18v18h-18zM477 97h18v18h-18zM477 117h18v18h-18zM477 137h18v18h-18zM497 137h18v18h-18zM517 137h18v18h-18zM537 137h18v18h-18zM557 137h18v18h-18zM577 137h18v18h-18zM597 137h18v18h-18z"/>
+<path class="trk" d="M46,146 L606,146"/>
+<path class="trk" d="M166,146 L166,86 L486,86 L486,146"/>
+<path class="arr" d="M121.5,146 L112.7,150.1 L112.7,141.9z"/>
+<path class="arr" d="M321.5,146 L312.7,150.1 L312.7,141.9z"/>
+<path class="arr" d="M561.5,146 L552.7,150.1 L552.7,141.9z"/>
+<path class="arr" d="M166,110.5 L170.1,119.3 L161.9,119.3z"/>
+<path class="arr" d="M321.5,86 L312.7,90.1 L312.7,81.9z"/>
+<path class="arr" d="M486,141.5 L481.9,132.7 L490.1,132.7z"/>
+<circle class="jn" cx="166" cy="146" r="4.5"/>
+<circle class="jn" cx="486" cy="146" r="4.5"/>
+<text x="166" y="170" text-anchor="middle">split j4</text>
+<text x="486" y="170" text-anchor="middle">join j5</text>
+<path class="pt" d="M622,28 L626,38 L618,38z"/>
+<path class="trk" d="M622,38 V46"/>
+<text x="622" y="58" text-anchor="middle">N</text>
+<text class="legend" x="16" y="256">Top view, north up. Carts leave the track at the split and come back at the join.</text>
+<text class="legend" x="16" y="273">The two switches look the same; the direction of travel decides the kind.</text>
+</svg>
